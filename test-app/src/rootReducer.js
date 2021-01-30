@@ -16,6 +16,13 @@ import { appState } from './globalState';
           is_logged_in: false,
         };
     }
+    case 'ADD_USER': {
+        console.log('ADD_USER triggered')
+        return {
+          ...state,
+          data: [...state.data, action.payload] 
+        };
+    }
     default:
       return state;
   }

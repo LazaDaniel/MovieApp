@@ -1,5 +1,8 @@
 export const appState = {
-    data:[],
+    data: [{
+        email: 'ana@bere.com',
+        age: '20'
+    }],
     is_logged_in: false,
     isLoading: false,
-  };
+};

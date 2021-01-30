@@ -25,8 +25,11 @@ class Logout extends Component {
 
     render() {
         return (
-            <div style={{ backgroundColor: 'red', height: '100vh', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
-                <Button variant="contained" color="primary" onClick={() => this.logout()}>logout</Button>
+            <div style={{ backgroundColor: 'red', height: '100vh', width: '100%', textAlign: 'center', justifyContent: 'center' }}>
+                <Button variant="contained" color="primary" onClick={() => this.logout()}
+                    style={{ margin: 20 }}>
+                    Logout
+                    </Button>
             </div>
         )
     }

@@ -23,17 +23,20 @@ class Login extends Component {
     loginAction = () => {
         // console.log(this.props)
         this.props.login_user();
-        setTimeout(()=> {
+        setTimeout(() => {
             const { history } = this.props;
-            if (history) history.push('/');
+            if (history) history.push('/form');
         }, 500);
-       
+
     }
 
     render() {
         return (
-            <div style={{ backgroundColor: 'green', height: '100vh', width: '100%', alignItems: 'center', justifyContent: 'center' }} >
-                <Button variant="contained" color="primary" onClick={() => this.loginAction()}>Login</Button>
+            <div style={{ backgroundColor: 'green', height: '100vh', width: '100%', textAlign: 'center', justifyContent: 'center' }} >
+                <Button variant="contained" color="primary" onClick={() => this.loginAction()}
+                    style={{ margin: 20 }}>
+                    Login
+                </Button>
             </div>
         )
     }
